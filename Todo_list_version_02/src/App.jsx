@@ -1,17 +1,23 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import AppName from "./components/AppName";
 import AddTodo from "./components/AddTodo";
-import Todoitem from "./components/Todoitem";
 import "./App.css";
+import Todoitems from "./components/Todoitems";
 function App() {
+  const todoItems=[ {
+    name:"Buy milk",
+    dueDate:"06/06/2026"
+  },
+{
+  name:"Go to College",
+  dueDate:"06/09/2026"
+}
+];
   return (
     <center className="todo-container">
       <AppName />
       <AddTodo />
-      <div className="item-container">
-        <Todoitem item="Go to college" date="06/06/2026"></Todoitem>
-        <Todoitem item="Buy milk" date="06/06/2026"></Todoitem>
-      </div>
+      <Todoitems></Todoitems>
     </center>
   );
 }
