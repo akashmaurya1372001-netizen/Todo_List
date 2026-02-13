@@ -1,6 +1,6 @@
 function Todoitem({ item, date }) {
   return (
-    <div className="container">
+    <div className={Style.container}>
       <div className="row kg row">
         <div className="col-6">{item}</div>
         <div className="col-4">{date}</div>

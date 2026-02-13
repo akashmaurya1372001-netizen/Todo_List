@@ -13,7 +13,7 @@ function App() {
   dueDate:"06/09/2026"
 },
 {
-  name:"like this vidio"
+  name:"like this vidio",
   dueDate:"right now"
 },];
   return (
