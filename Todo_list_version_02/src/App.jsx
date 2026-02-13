@@ -11,13 +11,16 @@ function App() {
 {
   name:"Go to College",
   dueDate:"06/09/2026"
-}
-];
+},
+{
+  name:"like this vidio"
+  dueDate:"right now"
+},];
   return (
     <center className="todo-container">
       <AppName />
       <AddTodo />
-      <Todoitems></Todoitems>
+      <Todoitems item={item}></Todoitems>
     </center>
   );
 }
